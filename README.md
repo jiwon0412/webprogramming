@@ -1,7 +1,6 @@
 # Web programming 실습 코드 모음
 <!DOCTYPE html>
 <head>
-    <title>Week1</title>
 </head>
 <body>
     <h1>Web Programming</h1>
