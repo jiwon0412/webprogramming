@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>객체 생성</title>
+<script>
+    // new Object()로 직접 개체 만들기
+    var myClass = new Object();
+    myClass.korName = "웹프로그래밍";
+    myClass.engName = "Web Programming";s
+    myClass.classCode = "V024003";
+    myClass.nStudent = 0;
+    myClass.register = function() {
+        myClass.nStudent++;
+    }
+    myClass.unregister = function() {
+        myClass.nStudent--;
+    }
+    myClass.getStudentCount = function() {s
+        return myClass.nStudent;
+    }
+
+    // 리터럴 표기법
+    var myClassLiteral = {
+        korName: "웹프로그래밍",
+        engName: "Web Programming",
+        classCode: "V024003",
+        nStudent: 0,
+        register: function() {
+            this.nStudent++;
+        },
+        unregister: function() {
+            this.nStudent--;
+        },
+        getStudentCount: function() {
+            return this.nStudent;
+        }
+    };
+
+    // 프로토타입으로 객체 만들기
+    function MyClassPrototype(korName, engName, classCode, nStudent) {
+        this.korName = korName;
+        this.engName = engName;
+        this.classCode = classCode;
+        this.nStudent = nStudent;
+    }
+    // 프로토타입 메서드 정의
+    MyClassPrototype.prototype.register = function() {
+        this.nStudent++;
+    };
+    MyClassPrototype.prototype.unregister = function() {
+        this.nStudent--;
+    };
+    MyClassPrototype.prototype.getStudentCount = function() {
+        return this.nStudent;
+    };
+    // 프로토타입 객체 인스턴스 생성
+    var myClassProtoInstance = new MyClassPrototype("웹프로그래밍", "Web Programming", "V024003", 0);
+    
+</script>    
+</head>
+<body>
+<h3>1. 직접 개체 만들기</h3>
+<script>
+    document.write("교과목 이름 = ");
+    document.write(myClass.korName + "<br>");
+    document.write("등록 학생 수 = ");
+    document.write(myClass.nStudent + "<br>");
+    document.write("after register, 등록 학생 수 = ");
+    myClass.register();
+    document.write(myClass.getStudentCount() + "<br>");
+</script>
+<hr>
+<h3>2. 리터럴 표기법</h3>
+<script>
+    document.write("교과목 이름 = ");
+    document.write(myClassLiteral.korName + "<br>");
+    document.write("등록 학생 수 = ");
+    document.write(myClassLiteral.nStudent + "<br>");
+    document.write("after register, 등록 학생 수 = ");
+    myClassLiteral.register();
+    document.write(myClassLiteral.getStudentCount() + "<br>");
+</script>
+<hr>
+<h3>3. Prototype</h3>
+<script>
+    document.write("교과목 이름 = ");
+    document.write(myClassProtoInstance.korName + "<br>");
+    document.write("등록 학생 수 = ");
+    document.write(myClassProtoInstance.nStudent + "<br>");
+    document.write("after register, 등록 학생 수 = ");
+    myClassProtoInstance.register();
+    document.write(myClassProtoInstance.getStudentCount() + "<br>");
+</script>
+</body>
+</html>
