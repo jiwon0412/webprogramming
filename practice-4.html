@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습문제 8-4</title>
+    <script>
+        function ksd() {
+            let p = document.getElementById('p');
+            alert(p.innerHTML);
+        }
+    </script>
+</head>
+<body>
+    <h2>계산해봅시다</h2>
+    <hr>
+    <p id="ps">2 + 4 = <span onclick="this.innerHTML=eval(2+4);">답</span>
+    </p>
+</body>
+</html>
