@@ -5,12 +5,12 @@
     <ul>
         <li>Week</li>
             <ul>
-                <li>obj_gam.html</li>
+                <li>obj_gam.html: 객체 생성 3가지 방법 연습습</li>
                 <li>practice-4.html</li>
-                <li>week1.html</li>
-                <li>week2-1.html</li>
+                <li>week1.html: 기본 HTML 문서 작성</li> 
+                <li>week2-1.html: 표, 링크, 시맨틱 태그</li>
                 <li>week2-2.html</li>
-                <li>week3.html</li>
+                <li>week3.html: CSS3 style</li>
                 <li>week4-obj.html</li>
             </ul>
         </li>
@@ -82,8 +82,8 @@
         <li>Chap9</li>
             <ul>
                 <li>9_1.html</li>
-                <li>9_2.html</li>
-                <li>9_3.html</li>
+                <li>9_2.html: 라디오버튼 선택된 것 알아서 그림 그리기</li>
+                <li>9_3.html: Enter 키가 입력되었을 때 수식의 값을 계산하기</li>
                 <li>9_4.html</li>
                 <li>9_5.html</li>
                 <li>9_7.html</li>
