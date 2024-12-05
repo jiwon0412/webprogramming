@@ -9,15 +9,18 @@
             <li>기본 HTML 문서 작성</li>
             <li>1주차 공부 내용 정리</li>
         </ul>
-    </ul>
 
-    <ul>
-    <li>2. week2.html</li>
+        <li>2. week2.html</li>
         <ul>
             <li>2주차 연습</li>
             <li>표, 링크, 시맨틱 태그 등 추가</li>
             <li>2주차 공부 내용 정리 추가</li>
         </ul>
+        
+    </ul>
+
+    <ul>
+    
     </ul>
 
 
