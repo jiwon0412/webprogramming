@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포스티잇 - 메모 저장</title>
+</head>
+<body>
+    <h3>포스트잇 - 메모 저장</h3>
+    <hr>
+    제목: <input id="title" type="text"><br>
+    메모 입력: <br>
+    <textarea id="memo" rows="10" cols="30" placeholder="여기에 메모를 입력하세요."></textarea><br><br>
+    <button onclick="saveMemo()">저장</button>
+    <button onclick="goToViewPage()">보기 페이지로 이동</button>
+
+    <script>
+        let title = document.getElementById("title");
+        let memo = document.getElementById("memo");
+
+        function saveMemo() {
+            if (!window.localStorage) {
+                alert("로컬스토리지를 지원하지 않습니다.");
+                return;
+            }
+            if (title.value.trim() === "" || memo.value.trim() === "") {
+                alert("제목과 메모 내용을 모두 입력해주세요.");
+                return;
+            }
+            localStorage.setItem(title.value, memo.value);
+            alert('메모가 저장되었습니다.');
+            title.value = ""; // 제목 입력 필드 초기화
+            memo.value = "";  // 메모 입력 필드 초기화
+        }
+
+        function goToViewPage() {
+            window.location.href = "12-3-2.html"; // 저장된 메모를 보여주는 페이지로 이동
+        }
+    </script>
+</body>
+</html>

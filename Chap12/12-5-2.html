@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택된 도시와 음식 보여주기</title>
+    <style>
+        /* 큰 박스 스타일 */
+        .info-box {
+            border: 2px solid yellow;
+            padding: 10px;
+            width: fit-content;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h3>선택된 도시와 음식 보여주기</h3>
+    <hr>
+    <div id="output" class="info-box"></div>
+
+    <script>
+        const output = document.getElementById("output");
+
+        // storage 이벤트 리스너 등록
+        window.addEventListener("storage", function(event) {
+            if (event.key === "city" || event.key === "food") {
+                displaySelection();
+            }
+        });
+
+        function displaySelection() {
+            const city = localStorage.getItem("city");
+            const food = localStorage.getItem("food");
+
+            // 큰 박스 안에 city와 food 항목 출력
+            output.innerHTML = `
+                <div class="item">city=${city}</div>
+                <div class="item">food=${food}</div>
+            `;
+        }
+
+        // 페이지가 로드되었을 때 로컬 스토리지에서 데이터를 불러와서 출력
+        displaySelection();
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포스티잇 출력</title>
+</head>
+<body>
+    <h3>포스트잇 출력</h3>
+    <hr>
+    <div id="memoList"></div>
+    <script>
+        function goToSavePage() {
+            window.location.href = "save.html"; // 메모 저장 페이지로 돌아가기
+        }
+
+        function loadMemo() {
+            let memoListDiv = document.getElementById('memoList');
+            if (localStorage.length === 0) {
+                memoListDiv.innerHTML = "<p>저장된 메모가 없습니다.</p>";
+                return;
+            }
+
+            let memoList = "";
+            for (let i = 0; i < localStorage.length; i++) {
+                let title = localStorage.key(i);
+                let memo = localStorage.getItem(title);
+                memoList += `<p>${i + 1}. <strong>${title}</strong> ${memo}</p>`;
+            }
+            memoListDiv.innerHTML = memoList;
+        }
+
+        // 페이지가 로드되면 메모를 불러옵니다.
+        window.onload = loadMemo;   
+    </script>
+</body>
+</html>

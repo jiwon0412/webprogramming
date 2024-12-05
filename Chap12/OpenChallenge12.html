@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>단어장 만들기</title>
+</head>
+<body>
+<h3>나의 단어장 만들기</h3>    
+<hr>
+영어 <input id="en" type="text"><br>
+한글 <input id="ko" type="text">
+<br><br>
+<button type="button" id="save" onclick="store()">단어 저장</button>
+<button type="button" id="retrieve" onclick="retrieve()">영단어 검색</button>
+<button type="button" id="remove" onclick="remove()">단어 삭제</button>
+<button type="button" id="view" onclick="view()">전체 보기</button>
+
+<script>
+    let en = document.getElementById("en");
+    let ko = document.getElementById("ko");
+
+    function store() {
+    if (!window.sessionStorage) {
+        alert("세션 스토리지를 지원하지 않습니다.");
+        return;
+    }
+    // 중복된 단어 확인
+    let existingValue = sessionStorage.getItem(en.value);
+    if (existingValue !== null) {
+        let overwrite = confirm(`"${en.value}"가 이미 있습니다. 수정하시겠습니까?`);
+        if (!overwrite) {
+            return; // 덮어쓰기를 거부하면 함수 종료
+        }
+    }
+
+    // 단어 저장
+    sessionStorage.setItem(en.value, ko.value);
+    en.value = ""; // 입력 필드 초기화
+    ko.value = ""; // 입력 필드 초기화
+    }
+
+    function retrieve() {
+        if(!window.sessionStorage) {
+            alert("세션 스토리지를 지원하지 않습니다.");
+            return;
+        }
+        let val = sessionStorage.getItem(en.value);
+        if(val == null)
+            alert(en.value + "는 없는 단어입니다.");
+        else
+            ko.value = val;
+    }
+
+    function remove() {
+        if(!window.sessionStorage) {
+            alert("세션 스토리지를 지원하지 않습니다.");
+            return;
+        }
+        let del = sessionStorage.getItem(en.value);
+        if(del == null)
+            alert(en.value + "는 없는 단어입니다.");
+        else
+        {
+            sessionStorage.removeItem(en.value);
+            en.value = ""; // 입력 필드 초기화
+            ko.value = ""; // 입력 필드 초기화
+        }
+    }
+
+    function view() {
+        if(!window.localStorage) {
+            alert("로컬 스토리지를 지원하지 않습니다.");
+            return;
+        }
+        if(localStorage.length == 0) {
+            alert("저장된 단어가 없습니다.");
+            return;
+        }
+        // 새 창 생성
+        let newWindow = window.open
+    }
+</script>
+</body>
+</html>

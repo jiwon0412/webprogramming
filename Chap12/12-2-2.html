@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>세션 스토리지에서 읽기</title>
+</head>
+<body>
+    <h3>세션 스토리지에 구입 리스트 검색</h3>   
+    <hr>
+    품목명 : <input id="item" type="text">
+    개수 : <input id="count" type="text"> <br>
+    <button type="button" id="find" onclick="find()">검색</button>
+    
+    <script>
+        let item = document.getElementById("item");
+        let count = document.getElementById("count");
+
+        function find() {
+            if(!window.sessionStorage) {
+                alert("세션 스토리지를 지원하지 않습니다.");
+                return;
+            }
+            let val = sessionStorage.getItem(item.value);
+            if(val == null)
+                alert(item.value + "는 없습니다.");
+            else
+                count.value = val;
+        }
+
+        function openSave() {
+            window.location.href = "12-2.html"; // 저장 HTML 파일 열기
+        }
+    </script>
+</body>
+</html>
