@@ -3,13 +3,13 @@
 <head></head>
 <body>
     <h1>HTML 연습 목록</h1>
-    <li>week1.html</li>
+    <li>1. week1.html
         <ul>
-            <li>1주차 연습</a>: 기본 HTML 문서 작성</li>
+            <li>1주차 연습</li>
+            <li>기본 HTML 문서 작성</li>li>
             <li>1주차 공부 내용 정리</li>
         </ul>
-    
-    <div class="week">
+    </li>
         <h2>Week 2</h2>
         <ul>
             <li><a href="week2.html">2주차 연습</a>: 표, 링크, 시맨틱 태그 등 추가</li>
