@@ -5,14 +5,12 @@
 </head>
 <body>
     <h1>HTML 연습 목록</h1>
-    <div class="week">
         <h2>Week 1</h2>
         <ul>
             <li><a href="week1.html">1주차 연습</a>: 기본 HTML 문서 작성</li>
             <li>1주차 공부 내용 정리</li>
         </ul>
-    </div>
-
+    
     <div class="week">
         <h2>Week 2</h2>
         <ul>
