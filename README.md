@@ -1,13 +1,11 @@
 # Web programming 실습 코드 모음
 <!DOCTYPE html>
-<head>
-    <title>연습 목록</title>
-</head>
+<head></head>
 <body>
     <h1>HTML 연습 목록</h1>
-        <h2>Week 1</h2>
+    <li>week1.html</li>
         <ul>
-            <li><a href="week1.html">1주차 연습</a>: 기본 HTML 문서 작성</li>
+            <li>1주차 연습</a>: 기본 HTML 문서 작성</li>
             <li>1주차 공부 내용 정리</li>
         </ul>
     
