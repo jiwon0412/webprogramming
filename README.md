@@ -5,7 +5,7 @@
     <ul>
         <li>Week</li>
             <ul>
-                <li>obj_gam.html: 객체 생성 3가지 방법 연습습</li>
+                <li>obj_gam.html: 객체 생성 3가지 방법 연습</li>
                 <li>practice-4.html</li>
                 <li>week1.html: 기본 HTML 문서 작성</li> 
                 <li>week2-1.html: 표, 링크, 시맨틱 태그</li>
@@ -110,13 +110,13 @@
         <br>
         <li>Chap12</li>
             <ul>
-                <li>12-1.html</li> 실습문제 1번
+                <li>12-1.html : 실습문제 1번</li> 
                 <li>12-1-2.html</li>
-                <li>12-2.html</li> 실습문제 2번
+                <li>12-2.html :  실습문제 2번</li>
                 <li>12-2-2.html</li>
-                <li>12-3.html</li> 실습문제 3번
+                <li>12-3.html : 실습문제 3번</li> 
                 <li>12-3-2.html</li>
-                <li>12-5.html</li> 실습문제 5번
+                <li>12-5.html :  실습문제 5번</li>
                 <li>12-5-2.html</li>
                 <li>sessionStorge.html</li>
             </ul>
