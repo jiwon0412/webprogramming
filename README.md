@@ -2,22 +2,24 @@
 <!DOCTYPE html>
 <head></head>
 <body>
-    <ul>
-    <li>1. week1.html</li>
+<ul>
+    <li>1. week1.html
         <ul>
             <li>1주차 연습</li>
             <li>기본 HTML 문서 작성</li>
             <li>1주차 공부 내용 정리</li>
         </ul>
-
-        <li>2. week2.html</li>
+    </li>
+    <li>2. week2.html
         <ul>
             <li>2주차 연습</li>
             <li>표, 링크, 시맨틱 태그 등 추가</li>
             <li>2주차 공부 내용 정리 추가</li>
         </ul>
-        
-    </ul>
+    </li>
+</ul>
+
+
 
     <ul>
     
