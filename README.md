@@ -101,6 +101,69 @@
             </ul>
         </li>
         <br>
-
+        <li>Chap10</li>
+            <ul>
+                <li>practice10-5.html</li>
+                <li>practice10-6.html</li>
+            </ul>
+        </li>
+        <br>
+        <li>Chap12</li>
+            <ul>
+                <li>sessionStorge.html</li>
+            </ul>
+        </li>
+        <br>
+        <li>Chap13</li>
+            <ul>
+                <li>13-6.html</li>
+                <li>ex13-10.html</li>
+                <li>multplication.js</li>
+                <li>timer.js</li>
+            </ul>
+        </li>
+        <br>
+        <li>Week11</li>
+            <ul>
+                <li>dg.html</li>
+                <li>dg.js</li>
+            </ul>
+        </li>
+        <br>
+        <li>Week12</li>
+            <ul>
+                <li>funcPr-practice.js</li>
+            </ul>
+        </li>
+        <br>
+        <li>Week13</li>
+            <ul>
+                <li>websever1.js</li>
+                <li>websever2.js</li>
+                <li>week3.html
+            </ul>
+        </li>
+        <br>
+        <li>Project</li>
+            <ul>
+                <li>care.html</li>
+            </ul>
+        </li>
+        <br>
+        <li>Code-project</li>
+            <ul>
+                <li>css-flex.html</li>
+                <li>css-grid.html</li>
+                <li>practice.html</li>
+            </ul>
+        </li>
+        <br>
+        <li>app1.js</li>
+        <li>app3.js</li>
+        <li>app4.js</li>
+        <li>app7.js</li>
+        <li>app8.js</li>
+        <li>package-lock.json</li>
+        <li>pacjage.json</li>
 </body>
 </html>
