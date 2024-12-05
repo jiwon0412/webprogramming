@@ -2,7 +2,6 @@
 <!DOCTYPE html>
 <head></head>
 <body>
-    <h1>HTML 연습 목록</h1>
     <ul>
     <li>1. week1.html</li>
         <ul>
@@ -11,12 +10,16 @@
             <li>1주차 공부 내용 정리</li>
         </ul>
     </ul>
-        <h2>Week 2</h2>
+
+    <ul>
+    <li>2. week2.html</li>
         <ul>
-            <li><a href="week2.html">2주차 연습</a>: 표, 링크, 시맨틱 태그 등 추가</li>
+            <li>2주차 연습</li>
+            <li>표, 링크, 시맨틱 태그 등 추가</li>
             <li>2주차 공부 내용 정리 추가</li>
         </ul>
-    </div>
+    </ul>
+
 
     <div class="week">
         <h2>Week 3</h2>
