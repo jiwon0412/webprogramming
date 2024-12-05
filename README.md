@@ -3,7 +3,7 @@
 <head></head>
 <body>
     <h1>HTML 연습 목록</h1>
-    <li>1. week1.html</li>
+    <ol>1. week1.html</ol>
         <ul>
             <li>1주차 연습</li>
             <li>기본 HTML 문서 작성</li>
