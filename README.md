@@ -110,6 +110,14 @@
         <br>
         <li>Chap12</li>
             <ul>
+                <li>12-1.html</li> 실습문제 1번
+                <li>12-1-2.html</li>
+                <li>12-2.html</li> 실습문제 2번
+                <li>12-2-2.html</li>
+                <li>12-3.html</li> 실습문제 3번
+                <li>12-3-2.html</li>
+                <li>12-5.html</li> 실습문제 5번
+                <li>12-5-2.html</li>
                 <li>sessionStorge.html</li>
             </ul>
         </li>
