@@ -14,13 +14,15 @@
                 <li>week4-obj.html</li>
             </ul>
         </li>
-        <li>2.week2.html</a>
-            <ul>
-                <li>2주차 연습</li>
-                <li>표, 링크, 시맨틱 태그 등 추가</li>
-                <li>2주차 공부 내용 정리 추가</li>
+        <br>
+        <li>Chap3</a>
+            <ul>   
+                <li>3_7.html</li>
+                <li>OpenChallenge2.html</li>
+                <li>practice.html</li>
             </ul>
         </li>
+        <br>
         <li>3.week3.html</a>
             <ul>
                 <li>3주차 연습</li>
