@@ -23,34 +23,62 @@
             </ul>
         </li>
         <br>
-        <li>3.week3.html</a>
-            <ul>
-                <li>3주차 연습</li>
-                <li>CSS3 style 공부</li>
+        <li>Chap4</a>
+            <ul>   
+                <li>practice.html</li>
             </ul>
         </li>
-        <li>object-gen.html</a>
-            <ul>
-                <li>객체 생성 3가지 방법 연습</li>
+        <br>
+        <li>Chap5</a>
+            <ul>   
+                <li>practice.html</li>
             </ul>
         </li>
-        <li>Week5 연습
+        <br>
+        <li>Chap6</li>
             <ul>
-                <li><a href="prac8-4.html">prac8-4.html</a>: 실습문제 8-4</li>
-                <li><a href="prac8-6.html">prac8-6.html</a>: 실습문제 8-6</li>
+                <li>6_1.html</li>
+                <li>6_2.html</li>
+                <li>6_3.html</li>
+                <li>6_4.html</li>
+                <li>6_5.html</li>
+                <li>6_6.html</li>
+                <li>6_7.html</li>
+                <li>Openchallenge.html</li>
             </ul>
         </li>
-        <li>Week6 연습
+        <br>
+        <li>Chap7</li>
             <ul>
-                <li><a href="prac9-2.html">prac9-2.html</a>: 실습문제 9-2 (라디오버튼 선택된 것 알아내서 그림 그리기)</li>
-                <li><a href="prac9-3.html">prac9-3.html</a>: 실습문제 9-3 (Enter 키가 입력되었을 때 수식의 값을 계산하기)</li>
+                <li>7_1.html</li>
+                <li>7_2.html</li>
+                <li>7_3.html</li>
+                <li>7_4.html</li>
+                <li>7_5.html</li>
+                <li>7_6.html</li>
+                <li>7_7.html</li>
+                <li>7_8.html</li>
+                <li>7_9.html</li>
+                <li>Openchallenge.html</li>
+                <li>obj-gem-result.html</li>
             </ul>
         </li>
-        <li>Week8 연습
+        <br>
+        <li>Chap8</li>
             <ul>
-                <li><a href="prac10-5.html">prac10-5.html</a>: 실습문제 10-5와 10-6을 포함</li>
+                <li>8_1.html</li>
+                <li>8_2.html</li>
+                <li>8_3.html</li>
+                <li>8_4.html</li>
+                <li>8_6.html</li>
+                <li>8_9.html</li>
+                <li>8_10.html</li>
+                <li>practice8-6.html</li>
+                <li>practice8-9.html</li>
+                <li>practice8-10.html</li>
             </ul>
         </li>
-    </ul>
+        <br>
+
 </body>
 </html>
