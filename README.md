@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<head>
-    <title>Web Programming 실습 코드 모음</title>
-</head>
+<head></head>
 <body>
     <h1>Web Programming 실습 코드 모음</h1>
     <ul>
-        <li>1.week1.html</a>
+        <li>Week</li>
             <ul>
-                <li>1주차 연습</li>
-                <li>기본 HTML 문서 작성</li>
-                <li>1주차 공부 내용 정리</li>
+                <li>obj_gam.html</li>
+                <li>practice-4.html</li>
+                <li>week1.html</li>
+                <li>week2-1.html</li>
+                <li>week2-2.html</li>
+                <li>week3.html</li>
+                <li>week4-obj.html</li>
             </ul>
         </li>
         <li>2.week2.html</a>
