@@ -4,7 +4,7 @@
 <body>
     <h1>HTML 연습 목록</h1>
     <ul>
-    <ol>1. week1.html</ol>
+    <li>1. week1.html</li>
         <ul>
             <li>1주차 연습</li>
             <li>기본 HTML 문서 작성</li>
