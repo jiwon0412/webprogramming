@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset = "utf-8">
+  <title>16개의 랜덤한 색 만들기</title>
+  <style>
+  div{
+    display: inline-block;
+    width: 150px;
+    padding: 10px;
+  }
+  </style>
+</head>
+<body>
+  <h3>16개의 랜덤한 색 만들기</h3>
+  <hr>
+  <script>
+    var red = new Array(16);
+    var green = new Array(16);
+    var blue = new Array(16);
+
+    for(var i=0; i<16; i++){
+      red[i] = Math.floor(Math.random()*256);
+      green[i] = Math.floor(Math.random()*256);
+      blue[i] = Math.floor(Math.random()*256);
+
+      document.write("<div style = 'background-color: rgb(");
+      document.write(red[i] + "," + green[i] + "," + blue[i] + ");'>");
+      document.write("rgb(" + red[i] + "," + green[i] + "," + blue[i] + ")");
+      document.write("</div>");
+    }
+  </script>
+</body>
+</html>

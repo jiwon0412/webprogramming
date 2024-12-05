@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>별 문자 출력하기</title>
+    <script>
+        function printStar(star) {
+            for(let i=0; i<star; i++) {
+                for(let j=0; j<i; j++) {
+                    document.write("*");
+                }
+                document.write("<br>");
+            }
+        }
+    </script>
+</head>
+<body>
+<h3>별 문자 출력하기</h3>
+<hr>
+<script>
+    let star = prompt("정수를 입력하세요","");
+    star = parseInt(star);
+    printStar(star);
+</script>   
+</body>
+</html>
