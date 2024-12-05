@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 스타일 주기</title>
+    <style>
+        label {
+            display: block;
+            padding: 10px;
+        }
+        input[type=text] {
+            color: red;
+        }
+        input[type=text]:focus {
+           font-size: 120%;
+        }
+        input:hover, textarea:hover {
+            background: aliceblue;
+        }
+    </style>
+</head>
+<body>
+<h3>CONTACT US </h3>   
+<hr>
+<form>
+    <label>
+        Name <input type="text" placeholder="Elvis">
+    </label>
+    <label>
+        Email <input type="email" placeholder="elvis@gamil.com">
+    </label>
+    <label>
+        Comment <textarea placeholder="메시지"></textarea>
+    </label>
+    <label>
+        <input type="submit" value="submit">
+    </label>
+    
+</form> 
+</body>
+</html>
