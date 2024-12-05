@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout()/clearTimeout()</title>
+    <style>
+        #clock {
+            border: 1px solid;
+            width: 150px;
+            font-size: 20px;
+            font-weight:200px;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        let clock;
+        let timer=null;
+        function startClock() {
+            clock = document.getElementById('clock');
+            showTime();
+            timer = setInterval('showTime();', 1000); //1초마다 부르기
+    
+        }
+        
+        function showTime() {
+            let time = new Date();
+            clock.innerHTML = time.toLocaleTimeString();
+            
+        }
+
+        function stop_start_clock() { // 마우스 클릭 이벤트 리스너
+            if(timer) {
+                clearInterval(timer); 
+                timer = null;
+                clock.style.color = 'gray';
+            }
+            else if(timer==null) {
+                timer = setInterval('showTime();', 1000); //1초마다 부르기
+                clock.style.color = 'black';
+            }
+            
+        }
+    </script>
+</head>
+<body onload="startClock();">
+<h3>div 태그에 시계 만들기</h3>    
+시계를 클릭하면 시계가 멈추고 다시 클릭하면 가기 시작한다.
+<hr>
+<div id="clock" onclick="stop_start_clock();">
+</div>
+</body>
+</html>
