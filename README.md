@@ -124,9 +124,15 @@
         <br>
         <li>Chap13</li>
             <ul>
-                <li>13-6.html</li>
+                <li>13-1.html : 실습문제 1번</li>
+                <li>13-2.html : 실습문제 2번</li>
+                <li>13-3.html : 실습문제 3번</li>
+                <li>13-4.html : 실습문제 4번</li>
+                <li>13-5.html : 실습문제 5번</li>
+                <li>13-6.html : 실습문제 6번</li>
                 <li>ex13-10.html</li>
-                <li>multplication.js</li>
+                <li>multplication.js : 실습문제 6번</li>
+                <li>result.js : 실습문제 5번</li>
                 <li>timer.js</li>
             </ul>
         </li>
