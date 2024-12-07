@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>워커 태스크 활용하기</title>
+</head>
+<body>
+    <h3>학점 매기기</h3>
+    <hr>
+    <button type="button" id="score" onclick="score()">점수 입력</button>
+    <br>
+    <span id="result"></span> <!-- 점수와 학점 출력 위치 -->
+
+    <script>
+        // 워커 생성
+        let w = new Worker("result.js");
+
+        // 워커로부터 메시지를 받을 때 실행
+        w.onmessage = function(e) {
+            let score = e.data.score;
+            let grade = e.data.grade;
+            document.getElementById("result").textContent = `${score} = ${grade}`; // 점수 = 학점 형식으로 출력
+        };
+
+        // 점수를 입력받아 워커로 전송
+        function score() {
+            let input = prompt("점수를 숫자로 입력하세요");
+            let score = parseInt(input);
+
+            // 입력이 올바르지 않은 경우 처리
+            if (isNaN(score) || score < 0 || score > 100) {
+                alert("유효한 점수를 입력하세요 (0-100)");
+                return;
+            }
+
+            // 점수를 워커로 전송
+            w.postMessage(score);
+        }
+    </script>
+</body>
+</html>

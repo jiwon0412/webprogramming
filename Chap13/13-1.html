@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>자바스크립트로 비디오 제어</title>
+</head>
+<body>
+<h3>자바스크립트로 비디오 제어</h3>
+<hr>
+<video id="video" src="./media/bear.mp4"></video>
+<div id="msg">오디오 제어 메시지 출력</div>
+<input type="button" value="play" onclick="play()">
+		<input type="button" value="pause" onclick="pause()">
+		<input type="button" value="replay" onclick="replay()">
+		<input type="button" value="vol-" onclick="volumeDown()">
+		<input type="button" value="vol+" onclick="volumeUp()">
+		<input type="button" value="mute on/off" onclick="mute()">
+<script>
+let video = document.getElementById("video");
+let msg = document.getElementById("msg");
+function play(){
+		msg.innerHTML=video.src+"를 재생중입니다.";
+		video.play();
+	}
+	function pause(){
+		msg.innerHTML=video.src+"를 중지합니다.";
+		video.pause();
+	}
+	function replay(){
+		msg.innerHTML=video.src+"를 다시 재생합니다.";
+		video.load();
+		video.play();
+	}
+	function volumeUp(){
+		video.volume+=0.1;
+	}
+	function volumeDown() {
+		video.volume-=0.1;
+	}
+	function mute() {
+		if(video.muted==true)
+			video.muted=false;
+		else
+			video.muted=true;
+	}
+</script></body></html>

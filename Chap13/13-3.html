@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다시 할까요?</title>
+</head>
+<body>
+    <h3>애국가 연주</h3>
+    <hr>
+    <audio id="audio" src="./media/Aegukga.mp3" autoplay controls></audio>
+    <script>
+        let audio = document.getElementById("audio");
+        audio.onended = function(e) {
+             // 사용자에게 확인 창을 띄움
+             let replay = confirm("다시 할까요?");
+            
+            // 사용자가 확인(OK) 버튼을 클릭하면 오디오 재생
+            if (replay == true) {
+                audio.load();
+                audio.play();     
+            }
+        }
+    </script>
+</body>
+</html>

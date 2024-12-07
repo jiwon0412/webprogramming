@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오디오 재생</title>
+</head>
+<body>
+    <h3>오디오 재생</h3>
+    듣고 싶은 곡은 선택하시고 시작 버튼을 누르면 연속하여 자동 연주합니다.
+    <hr>
+    <audio id="audio" src="" autoplay controls></audio>
+    <form>
+        <input type="checkbox" value="./media/Aegukga.mp3" onclick="addMusic(this)">애국가<br>
+        <input type="checkbox" value="./media/Moon Glow.mp3" onclick="addMusic(this)">Moon Glow<br>
+        <input type="checkbox" value="./media/Embraceable You.mp3" onclick="addMusic(this)">Embraceable You<br>
+        <input type="button" value="연주시작" onclick="playMusic()">
+    </form>
+
+    <script>
+        let audio = document.getElementById("audio");
+        let playlist = []; // 선택된 곡들의 리스트
+        let currentIndex = 0; // 현재 재생 중인 곡의 인덱스
+
+        // 체크박스 클릭 시 곡 추가 또는 제거
+        function addMusic(checkbox) {
+            if (checkbox.checked) {
+                // 곡 추가
+                playlist.push(checkbox.value);
+            } else {
+                // 곡 제거
+                playlist = playlist.filter(song => song !== checkbox.value);
+            }
+        }
+
+        // 연주시작 버튼 클릭 시 실행
+        function playMusic() {
+            if (playlist.length > 0) {
+                currentIndex = 0; // 시작 인덱스 초기화
+                audio.src = playlist[currentIndex];
+                audio.play();
+            } else {
+                alert("곡을 선택해주세요!");
+            }
+        }
+
+        // 오디오 종료 시 다음 곡 재생
+        audio.onended = function() {
+            currentIndex++;
+            if (currentIndex < playlist.length) {
+                audio.src = playlist[currentIndex];
+                audio.play();
+            }
+        };
+    </script>
+</body>
+</html>
